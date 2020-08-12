@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: cooper;
+    background-color: rgb(97, 226, 198);
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px ;
+    
+    
+}
+.container .box{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin: 10px 0;
+    background-color: cornsilk;
+    color:rgba(0 ,0, 0, 0.5);
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container .box4{
+    background:  rgb(97, 226, 198);
+    border-radius:15px;
+    box-shadow: inset -12px -15px 15px rgba(0, 0, 0, 0.3),
+               inset 12px 15px 15px rgba(0, 0, 0, 0.3);
+               transition: .5s;
+            }
+
+.container .box4::before{
+   content:'';
+    width:80%;
+    height: 20px;
+    position: absolute;
+    bottom:-45px;
+    background-color:rgba(0, 0, 0, 0.2) ;
+    border-radius: 50%;
+    filter:blur(5px)
+
+}
+
+.in{
+    text-align: center;
+    background-color: rgb(97, 226, 198);
+    position: relative;
+    bottom:180px;
+    /* left :100px; */
+    margin:20px 5px;
+    padding:10px 5px;
+    border-radius:5px;
+    width:60%;
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border:none;
+    box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.5),
+    inset 3px 3px 3px rgba(0 ,0, 0, 0.5)
+      
+}
+#location-details{
+    text-align: center;
+    position: absolute;
+    top:100px;
+    margin:10px 0px;
+
+}
+#degree{
+    position: absolute;
+    top:180px;
+    font-size: 42px;
+    color: rgba(0, 0, 0, 0.5);
+    padding:10px;
+    margin:10px;
+    
+}
+#max-min{
+    position: absolute;
+    bottom:180px;
+}
+#sky{
+    position: absolute;
+    bottom:60px;
+}
+
+
+
